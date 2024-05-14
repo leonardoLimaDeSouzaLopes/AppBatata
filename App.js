@@ -10,17 +10,31 @@ export default function App() {
   const [imagem, setImagem] = useState(0)
   const [revelada, setRevelada] = useState(0)
   const frases = [
-    "Sempre Siga o Caminho de Batata",
+    "Sempre Siga o Caminho de BATATA",
     "BATATA!",
-    "Clodoaldo Come Batatas, Você Devia Fazer o Mesmo!",
-    "Sempre que Estiver Inserto, Peça Conselhos a uma Batata",
+    "Clodoaldo Come BATATAS, Você Devia Fazer o Mesmo!",
+    "Sempre que Estiver Incerto, Peça Conselhos a uma BATATA",
     "Batatinha Quando Nasce Te Ama de Montão, Batatinha Quando Cresce Enche seu Coração!",
-    "Dinheiro Não Traz Felicidade, Só Batatas Fazem Isso",
-    "BBB Significa 'Big Batatas Brasil'",
-    "Os Verdadeiros Amigos São as Batatas que Fazemos Pelo Caminho!",
-    "O B no Simbolo do Bitcoin Vem de Batata",
-    "Caso Esteja Sozinho uma Batata Pode-lhe Fazer Compania",
-    "Se Estiver com Medo Saiba que a Batata Está com Você!"
+    "Dinheiro Não Traz Felicidade, Só BATATAS Fazem Isso",
+    "BBB Significa 'Big BATATAS Brasil'",
+    "Os Verdadeiros Amigos São as BATATAS que Fazemos Pelo Caminho!",
+    "O B no Simbolo do Bitcoin Vem de BATATA",
+    "Caso Esteja Sozinho uma BATATA Pode-lhe Fazer Compania",
+    "Se Estiver com Medo Saiba que a BATATA Está com Você!",
+    '"BATATA OU MORTE!" Dom BATATA I',
+    "É Incrível Como o BB Consegue Misturar Humor com BATATA",
+    "Me Jogem aos Lobos que Eu Voltarei BATATA!",
+    "O Cozimento de uma BATATA é uma Tragédia, o Cozimento de Várias Pessoas é Estatiística",
+    "O Ignorante Afirma, O Sábio Dúvida E A Batata Reflete",
+    "Eu Vos Declaro Potato E Batata",
+    "República Federativa Das Batatas Unidas",
+    "A Grande Batata Está Te Observando",
+    "Muitas Pessoas Riram, Outras Pessoas Choraram Mas a Maioria Comeu BATATA!",
+    '"Agora Me Tornei a Batata, O destruidor Do Mundo" Openheimer',
+    "Batata Mecânica",
+    "Batata Park",
+    "Coma Batata Enquato Eles Dormem",
+    "Tá Chovendo Batata!",
   ]
   const [mensagem, setMensagem] = useState();
 
@@ -40,8 +54,12 @@ export default function App() {
           {mostrarMensagem()}
         </View>
 
-        <View style={{flex: 3, width: "40%",}}>
+        <View style={{flex: 1, width: "40%",}}>
           {mostraBotao()}
+        </View>
+
+        <View style={{flex: 1, width: "40%",}}>
+          <Pressable><Text>Caso Não Goste de Batatas Clique Aqui (ainda n implementamos a punicao n funciona)</Text></Pressable>
         </View>
 
       </View>
@@ -119,5 +137,5 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     paddingVertical: 15,
     marginBottom: 15,
-  }
+  },
 });
