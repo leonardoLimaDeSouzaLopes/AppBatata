@@ -15,7 +15,12 @@ export default function App() {
     "Clodoaldo Come Batatas, Você Devia Fazer o Mesmo!",
     "Sempre que Estiver Inserto, Peça Conselhos a uma Batata",
     "Batatinha Quando Nasce Te Ama de Montão, Batatinha Quando Cresce Enche seu Coração!",
-    "Dinheiro Não Traz Felicidade, Só Batatas Fazem Isso"
+    "Dinheiro Não Traz Felicidade, Só Batatas Fazem Isso",
+    "BBB Significa 'Big Batatas Brasil'",
+    "Os Verdadeiros Amigos São as Batatas que Fazemos Pelo Caminho!",
+    "O B no Simbolo do Bitcoin Vem de Batata",
+    "Caso Esteja Sozinho uma Batata Pode-lhe Fazer Compania",
+    "Se Estiver com Medo Saiba que a Batata Está com Você!"
   ]
   const [mensagem, setMensagem] = useState();
 
@@ -35,7 +40,7 @@ export default function App() {
           {mostrarMensagem()}
         </View>
 
-        <View style={{flex: 3, width: "25%",}}>
+        <View style={{flex: 3, width: "40%",}}>
           {mostraBotao()}
         </View>
 
@@ -103,12 +108,15 @@ const styles = StyleSheet.create({
   },
   mensagem: {
     textAlign: "center",
+    fontSize: 20,
     marginBottom: 15,
   },
   botao: {
     backgroundColor: corPrincipal,
     color: corLetraBranca,
+    fontSize: 24,
     textAlign: "center",
+    borderRadius: 15,
     paddingVertical: 15,
     marginBottom: 15,
   }
